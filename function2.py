@@ -11,8 +11,9 @@ def func2(a):
     x=5
     return a+x
  
- #호출
- #print func2(1)
+#호출
+
+print(func2(1))
 
 
 
@@ -21,8 +22,8 @@ def func2(a):
 def times(a=10, b=20):
     return a*b
 
- #호출
- #print(times())
+#호출
+print(times())
 
 
 print(times())
