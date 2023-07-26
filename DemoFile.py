@@ -31,7 +31,16 @@ f.close()
 f.closed
 
 #파일읽기
-f = open(r"c:\work\demo.txt","rt",encoding="utf-8")
+f = open(r"c:\work\demo.txt","rt",encoding="utf-8") #r은 roasting rotation으로 \를 2개 쓰지 않고 1개 쓰기 위함
 result = f.read()
+print("---라인단위---")
+f.seek(0)
+print(f.readline(), end="")
+print(f.readline(), end="")
+print("---리스트로 받기---")
+f.seek(0)
+result = f.readlines()
+print(result)
+
 f.close()
 print(result)
