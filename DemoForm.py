@@ -8,7 +8,7 @@ from PyQt5.QtWidgets import QWidget
 
 #디자인된 문서 로딩
 form_class = uic.loadUiType("DemoForm.ui")[0]
-#폼 클래스 정의
+#폼 클래스 정의 
 class DemoForm(QDialog, form_class):
     #초기화메서드
     def __init__(self):
